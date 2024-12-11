@@ -1,0 +1,485 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    background-image: url(/assets/img/fondo4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-color: beige;*/
+}
+
+.header {
+    background-color: #5e2129d7;
+    padding: 10px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navegacion {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+.navegacion li {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navegacion li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease; 
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+    padding: 5px 10px; 
+}
+
+.navegacion li a svg {
+    height: 4vh;
+    width: auto;
+    padding-bottom: 7px; 
+}
+
+.navegacion li a:hover {
+    color: white;
+    background-color: #e30052;
+    padding: 10px 20px; 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.Carrusel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    gap: 0 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.mision-vision .item {
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    gap: 20px;
+    background-color:#5e2129d7;
+    border-radius: 20px;
+}
+
+.mision-vision .item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.mision-vision .item h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #d1034e;
+    font-weight: bolder;
+}
+
+.mision-vision .item p {
+    font-size: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.servicios {
+    background-color: #5e2129d7;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.servicios .container {
+    display: flex;          
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    gap: 20px;              
+    text-align: center;   
+}
+
+.servicios h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #d1034e; 
+    font-weight: bolder;
+}
+
+.servicios .contenedor-tarjetas {
+    display: flex;          
+    align-items: center;    
+    justify-content: center;
+    flex-wrap: wrap;        
+    gap: 50px;             
+}
+
+
+.servicios .tarjeta {
+    background-color: #949393b9;
+    color: white;
+    font-weight: bolder;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicios .tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicios .tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.servicios .tarjeta .contenido {
+    padding: 15px;
+}
+
+.servicios .tarjeta .titulo {
+    font-size: 27px;
+    color: #9b053c;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.servicios .tarjeta .descripcion {
+    font-size: 20px;
+    color: #5e2129;
+    text-align:justify;
+}
+
+.footer {
+    display: flex;
+    justify-content:center;
+    background-color: #5e2129;
+    color: white;
+    padding: 25px 5px 20px 5px;
+    gap: 50px;
+}
+
+footer article {
+    width: 30%;
+}
+
+footer h3 {
+    gap: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #d1034e;
+    text-align: center;
+    font-weight: bolder;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer li{
+    color: white;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+footer li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    text-align: center;
+    transition: background-color 0.5s;
+    transition: padding 0.5s;
+    border-radius: 100px;
+    gap: 0 10px;
+
+    svg{height: 6vh; width: auto;
+    padding-bottom: 4px;}
+}
+
+
+.footer .contacto li{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0 10px;
+    svg{height: 5vh; width: auto;
+        padding-bottom: 4px;}
+}
+
+.footer li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.footer a:hover{
+    padding: 10px 1px 10px 1px;
+    background-color: #e30052;
+}
+
+
+.geolocalizacion iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.geolocalizacion div {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.geolocalizacion iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.geolocalizacion div:hover {
+    border-radius: 30px;
+    box-shadow: 0 8px 10px #f00c58;
+}
+
+@media (max-width: 954px) {
+
+    .nav {
+        flex-direction: column;  
+        align-items: center;
+        padding: 0;
+    }
+
+    .logo {
+        margin-left: 0;
+        text-align: center;  
+    }
+
+    .logo img {
+        width: 80px;  
+    }
+
+    .navegacion {
+        display: flex;
+        flex-direction: column;  
+        gap: 10px;
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    .navegacion ul {
+        display: flex;
+        flex-direction: column; /* Hace que los enlaces estén en una columna */
+        gap: 15px;  /* Añade espacio entre cada elemento del menú */
+    }
+
+    .navegacion li {
+        display: flex;  /* Alinea los elementos como columna */
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: none; /* Está oculto en pantallas grandes */
+        cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+        width: 40px; /* Tamaño más grande */
+        height: 30px; /* Tamaño más grande */
+        position: relative; /* Para posicionar las barras dentro del botón */
+        background: transparent; /* Sin fondo */
+        border: none; /* Sin borde */
+        flex-direction: column; /* Asegura que las barras estén en columna */
+        justify-content: space-between; /* Espacio entre las barras */
+    }
+
+    .mision-vision {
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    .mision-vision .item {
+        width: 80%;  
+        margin-bottom: 20px;
+    }
+    
+    .footer {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    footer article {
+        width: 80%;  
+        margin-bottom: 20px;
+    }
+
+    footer li{
+        font-size: 20px;
+    }
+
+    footer li a {
+        font-size: 25px; 
+    }
+
+    .footer .contacto li{
+        svg{
+            height: vh;
+            width: auto;
+            padding-bottom: 3px;
+        }
+    }
+
+    .geolocalizacion iframe {
+        height: 250px; /* Ajustar la altura en pantallas pequeñas */
+    }
+
+    .geolocalizacion iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .geolocalizacion div:hover {
+        border-radius: 30px;
+        box-shadow: 0 8px 10px #f00c58;
+    }
+}
+
+@media (max-width: 1000px) {
+    .servicios .tarjeta {
+        width: 100%; 
+    }
+}
+
+/* Ocultar los enlaces del menú y mostrar solo el botón hamburguesa en pantallas pequeñas */
+@media screen and (max-width: 954px) {
+    #menu {
+        display: none; /* El menú estará oculto por defecto */
+        flex-direction: column; /* Asegura que los items se apilen verticalmente */
+        margin-top: 10px;
+    }
+
+    #menu li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex; /* Muestra el botón hamburguesa */
+        width: 45px; /* Ajusta el tamaño del botón */
+        height: 35px; /* Ajusta el tamaño del botón */
+        gap: 8px; /* Aumenta el espacio entre las barras */
+        cursor: pointer; /* Añade el cursor de puntero */
+        transition: transform 0.3s ease; /* Suaviza la animación de la transformación */
+    }
+
+    .hamburger.open {
+        transform: rotate(90deg); /* Rota todo el contenedor 90 grados para alinear las barras */
+        transition: transform 0.3s ease; /* Transición suave */
+    }
+    
+    .hamburger span {
+        height: 8px; /* Aumenta el grosor de las barras */
+        background-color: #e30052;
+        border-radius: 5px; /* Bordes redondeados */
+        width: 100%; /* Las barras ocupan todo el ancho */
+        transition: transform 0.3s ease; /* Añade la animación a las barras */
+    }
+    
+
+    .hidden {
+        display: none; /* Mantén la clase hidden para ocultar el menú */
+    }
+
+    #menu.show {
+        display: flex; /* Cuando el botón se haga clic, se muestra el menú */
+    }
+}
