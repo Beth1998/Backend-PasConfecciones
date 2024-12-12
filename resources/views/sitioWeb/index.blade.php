@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset(sitioWeb/css/style.css)}}">
-    <script src="{{asset(sitioWeb/js/script.js)}}"></script>
+    <link rel="stylesheet" href="{{asset('sitioWeb/css/style.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Pagina Web</title>
@@ -43,21 +42,21 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/assets/img/carrusel1.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <img src="{{asset('sitioWeb/img//carrusel1.webp')}}" class="d-block w-100 img-fluid" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Primera imagen</h5>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/assets/img/carrusel2.jpg" class="d-block w-100" alt="...">
+                        <img src="{{asset('sitioWeb/img//carrusel2.webp')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Segunda imagen</h5>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="/assets/img/carrusel3.jpg" class="d-block w-100" alt="...">
+                        <img src="{{asset('sitioWeb/img//carrusel3.webp')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Tercera imagen</h5>
                             <p>Some representative placeholder content for the third slide.</p>
@@ -166,7 +165,7 @@
         </section>
     </footer>
 
-    <script src="/js/script.js"></script>
+    <script src="{{ asset('sitioWeb/js/script.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
