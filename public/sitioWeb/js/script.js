@@ -7,6 +7,6 @@ const menu = document.getElementById('menu');
 hamburger.addEventListener('click', () => {
     // Alterna la clase "open" para animar las barras
     hamburger.classList.toggle('open');
-    
+    // Alterna la visibilidad del menú
     menu.classList.toggle('show');
 });
