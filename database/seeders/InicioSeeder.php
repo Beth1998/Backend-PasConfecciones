@@ -18,7 +18,7 @@ class InicioSeeder extends Seeder
     {
         $faker = Faker::create();
             DB::table('inicios')->insert([
-                'mision' => $faker->name
+                'mision' => $faker->text
             ]);
     }
 }

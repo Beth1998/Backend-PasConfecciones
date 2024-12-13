@@ -78,9 +78,10 @@
                 <div class="item">
                     <img src="https://placehold.co/100x100" alt="Misión">
                     <h2>MISION</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit consequatur, unde natus sint, quia quam sed ullam consequuntur tempora nihil, odio quidem commodi provident. Magnam placeat rem ullam ipsum. Veritatis?</p>
-                </div>
-                
+                    @foreach($getInicio as $getInicios)
+                    <p>{{$getInicios->mision}}</p>
+                    @endforeach
+                </div>       
                 <div class="item">
                     <img src="https://placehold.co/100x100" alt="Visión">
                     <h2>VISION</h2>
