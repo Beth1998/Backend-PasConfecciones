@@ -29,8 +29,7 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    
+    </header> 
 
     <main class="main">
         <section id="Galeria" class="Carrusel">
@@ -44,22 +43,16 @@
                     <div class="carousel-item active">
                         <img src="{{asset('sitioWeb/img//carrusel1.jpeg')}}" class="d-block w-100 img-fluid" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Primera imagen</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="{{asset('sitioWeb/img//carrusel2.jpeg')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Segunda imagen</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="{{asset('sitioWeb/img//carrusel3.jpeg')}}" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Tercera imagen</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                 </div>

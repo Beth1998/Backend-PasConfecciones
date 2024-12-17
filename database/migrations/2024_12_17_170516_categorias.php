@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Misvis extends Migration
+class Categorias extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class Misvis extends Migration
      */
     public function up()
     {
-        Schema::create('misvis', function(Blueprint $table){
+        Schema::create('categorias', function (Blueprint $table){
             $table->id();
-            $table->text('mision');
-            $table->text('vision');
+            $table->text('logo');
+            $table->string('correo');
+            $table->string('telefono');
+            $table->text('direccion');
             $table->enum('status',['ACTIVE','DEACTIVATE'])->default('ACTIVE');
             $table->timestamps();
         });
@@ -29,6 +31,6 @@ class Misvis extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('misvis');
+        Schema::dropIfExists('categorias');
     }
 }
