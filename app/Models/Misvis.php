@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Categorias extends Model
+class Misvis extends Model
 {
     use HasFactory;
-
     protected $fillable = [
-        'nombreCT'
+        'texto',
+        'url',
+        'imagenes_id'
     ];
 }

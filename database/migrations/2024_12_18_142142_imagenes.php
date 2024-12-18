@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Categorias extends Migration
+class Imagenes extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class Categorias extends Migration
      */
     public function up()
     {
-        Schema::create('categorias', function (Blueprint $table){
+        Schema::create('imagenes', function(Blueprint $table){
             $table->id();
-            $table->string('nombreCT');
+            $table->text('imgURL');
             $table->enum('status',['ACTIVE','DESACTIVATE'])->default('ACTIVE');
             $table->timestamps();
         });
@@ -28,6 +28,6 @@ class Categorias extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categorias');
+        Schema::dropIfExists('imagenes');
     }
 }

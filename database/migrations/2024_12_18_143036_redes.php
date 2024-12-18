@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Categorias extends Migration
+class Redes extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class Categorias extends Migration
      */
     public function up()
     {
-        Schema::create('categorias', function (Blueprint $table){
+        Schema::create('redes', function(Blueprint $table){
             $table->id();
-            $table->string('nombreCT');
+            $table->text('url');
             $table->enum('status',['ACTIVE','DESACTIVATE'])->default('ACTIVE');
+            /*$table->unsignedBigInteger('imagenes_id');
+            $table->foreign('imagenes_id')->references('id')->on('imagenes');*/
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class Categorias extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categorias');
+        Schema::dropIfExists('redes');
     }
 }
