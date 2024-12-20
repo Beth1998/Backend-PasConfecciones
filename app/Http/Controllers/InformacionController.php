@@ -8,7 +8,7 @@ class InformacionController extends Controller
 {
     public function Informacion(){
         $getInformacion = Informacion::all();
-        return view('sitioWeb/index.blade.php', compact('getInformacion'));
+        return view('sitioWeb/index', compact('getInformacion'));
     }
 
     public function Edit($id){

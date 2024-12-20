@@ -32,61 +32,6 @@
     </header> 
 
     <main class="main">
-        <section id="Galeria" class="Carrusel">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="{{asset('sitioWeb/img//carrusel1.jpeg')}}" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{asset('sitioWeb/img//carrusel2.jpeg')}}" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{asset('sitioWeb/img//carrusel3.jpeg')}}" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>        
-
-        <section id="MisionV" class="mision-vision">
-            <div class="item">
-            <!--@foreach($getMisvis as $getMisvis)
-                <img src="{{asset('sitioWeb/img//Mision.jpeg')}}" alt="Misión">
-                <h2>{{$getMisvis->text}}</h2>
-                <p>{{$getMisvis->url}}</p>
-            </div>
-            @endforeach -->
-
-            <img src="{{asset('sitioWeb/img//Mision.jpeg')}}" alt="Misión">
-                <h2>MISION</h2>
-                <p>Fabricamos uniformes de trabajo personalizados, diseñados para adaptarse a las necesidades específicas de cada cliente, garantizando su funcionalidad y comodidad. Nos comprometemos con un comercio justo, basado en los principios de la economía solidaria, promoviendo prácticas éticas y sostenibles en todo el proceso.</p>
-            </div>
-            <div class="item">
-                <img src="{{asset('sitioWeb/img//Vision.jpeg')}}" alt="Visión">
-                <h2>VISION</h2>
-                <p>"Para 2028, seremos un referente para nuestros clientes, ofreciendo soluciones relevantes y creando relaciones duraderas. Nos comprometemos a mantener nuestros principios basados en un modelo económico social y solidario, que impulse el crecimiento mutuo."</p>
-            </div>
-        </section>
-
         <section id="Servicios" class="servicios">
             <div class="container">
                 <h2>Nuestros Servicios</h2>
@@ -143,7 +88,7 @@
             <h3>REDES SOCIALES</h3>
             @foreach($getRedes as $red)  <!-- Usamos una variable diferente para evitar conflictos -->
             <ul>
-               <!-- <li><a href="{{$red->url}}">URL</a></li> -->
+                <li><a href="{{$red->url}}">URL</a></li> 
                 <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100050009486446&mibextid=ZbWKwL">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>Facebook</a></li>
                 <li><a target="_blank" href="https://www.instagram.com/pas.confecciones?igsh=MWRqZ2sxaTJ0ejM3NQ==">

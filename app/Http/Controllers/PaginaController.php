@@ -29,4 +29,22 @@ class PaginaController extends Controller
             'getCategorias'
         ));
     }
+
+    public function productos(){
+        $getInformaciones = Informaciones::all();
+        $getMisvis = Misvis::all();
+        $getServicios = Servicios::all();
+        $getRedes = Redes::all();
+        $getImagenes = Imagenes::all();
+        $getCategorias = Categorias::all();
+        
+        return view('SitioWeb/productos', compact(
+            'getInformaciones',
+            'getImagenes',
+            'getMisvis',
+            'getServicios',
+            'getRedes',
+            'getCategorias'
+        ));
+    }
 }
