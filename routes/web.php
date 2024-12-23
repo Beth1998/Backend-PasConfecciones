@@ -15,6 +15,8 @@ use App\Http\Controllers\PaginaController;
 
 
 
-Route::get('/',[PaginaController::class,'inicio']);
-Route::get('/productos',[PaginaController::class,'productos']);
+Route::get('/', [PaginaController::class, 'inicio']);
+Route::get('/productos', [PaginaController::class, 'productos']);
+Route::get('/blusas', [PaginaController::class, 'blusas']);
+
 

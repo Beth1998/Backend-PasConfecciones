@@ -23,63 +23,110 @@
 
 .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; /* Cambia la dirección a columna para centrar el logo */
+    align-items: center; /* Centra el contenido horizontalmente */
     padding: 0 25px;
 }
 
 .logo {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 20px;
+    flex-direction: column; /* Cambia la dirección a columna para agregar el botón debajo */
+    justify-content: center; /* Centra el logo */
+    align-items: center; /* Alinea el contenido */
+    margin-bottom: 20px; /* Añade espacio debajo del logo */
 }
 
 .logo img {
     width: 100px;
 }
 
+.btnlogo {
+    background-color: #d1034e;  /* Color de fondo del botón */
+    color: white;               /* Color del texto */
+    padding: 12px 25px;         /* Espaciado del botón */
+    font-size: 18px;            /* Tamaño de la fuente */
+    text-align: center;         /* Alinea el texto */
+    text-decoration: none;      /* Elimina el subrayado del enlace */
+    border-radius: 30px;        /* Bordes más redondeados */
+    margin-top: 20px;           /* Espacio encima del botón */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-weight: bold;          /* Poner el texto en negrita */
+}
+
+.btnlogo:hover {
+    background-color: #ff005d;  /* Color del botón cuando pasa el mouse */
+    transform: translateY(-2px); /* Levanta el botón ligeramente */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.btnlogo:active {
+    background-color: #000000; /* Cambia el color al hacer clic */
+    transform: translateY(0);   /* Vuelve a la posición original al hacer clic */
+}
+
 .navegacion {
     display: flex;
     gap: 30px;
     align-items: center;
-    margin-top: 20px;
+    justify-content: center; /* Centra el menú horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
 }
 
 .navegacion ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap; /* Acomoda los elementos en filas si es necesario */
+    gap: 10px;
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
 
 .navegacion li {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    flex: 1 1 auto; /* Ajusta el tamaño de los elementos según el espacio disponible */
 }
 
 .navegacion li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease; 
+    font-size: 16px;
+    transition: all 0.3s ease;
     border-radius: 100px;
     display: flex;
     align-items: center;
-    gap: 6px; 
-    padding: 5px 10px; 
-}
-
-.navegacion li a svg {
-    height: 4vh;
-    width: auto;
-    padding-bottom: 7px; 
+    gap: 6px;
+    padding: 5px 10px;
+    font-weight: bold;
 }
 
 .navegacion li a:hover {
     color: white;
     background-color: #e30052;
-    padding: 10px 20px; 
+    padding: 10px 20px;
 }
+
+
+.main h1{
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    background-color: #5e2129d7;
+    border-radius: 20px
+}
+
+#Servicios .contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 columnas de igual tamaño */
+    gap: 8px; /* Espacio entre las tarjetas */
+}
+
+#Servicios .col-md-4 {
+    /* Puedes ajustar el ancho de cada tarjeta aquí si es necesario */
+    width: 100%;
+}
+
 
 .hamburger {
     display: none;
@@ -155,17 +202,6 @@
     max-width: 400px;
     margin: 0 auto;
     text-align: justify;
-}
-
-#Servicios .contenedor-tarjetas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 5 columnas de igual tamaño */
-    gap: 8px; /* Espacio entre las tarjetas */
-}
-
-#Servicios .col-md-4 {
-    /* Puedes ajustar el ancho de cada tarjeta aquí si es necesario */
-    width: 100%;
 }
 
 .servicios {

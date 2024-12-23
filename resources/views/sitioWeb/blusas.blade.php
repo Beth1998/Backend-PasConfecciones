@@ -23,25 +23,25 @@
                 <span></span>
             </button>
             <ul id="menu" class="hidden">
-                <li><a href="{{ url('/productos') }}">ABRIGOS</a></li>
-                <li><a href="{{ url('/blusas') }}">BLUSAS</a></li>
-                <li><a href="">CAMISAS</a></li>
-                <li><a href="">CAMISETAS</a></li>
-                <li><a href="">CHAQUETAS</a></li>
-                <li><a href="">CHOMPAS</a></li>
-                <li><a href="">CONJUNTOS</a></li>
-                <li><a href="">FALDAS</a></li>
-                <li><a href="">GORRAS</a></li>
-                <li><a href="">HOGAR</a></li>
-                <li><a href="">ITEMS TEMPORALES</a></li>
-                <li><a href="">LENCERIA</a></li>
-                <li><a href="">MOCHILAS</a></li>
-                <li><a href="">OVEROLES-MANDILES</a></li>
-                <li><a href="">PANTALONES</a></li>
-                <li><a href="">PRENDAS HOSPITALARIAS</a></li>
-                <li><a href="">VARIOS</a></li>
-                <li><a href="">VESTIDOS</a></li>
-                <li><a href="">ZAPATOS</a></li>
+                <li><a href="/index.html">ABRIGOS</a></li>
+                <li><a href="#Galeria">BLUSAS</a></li>
+                <li><a href="#MisionV">CAMISAS</a></li>
+                <li><a href="/">CAMISETAS</a></li>
+                <li><a href="#Redes">CHAQUETAS</a></li>
+                <li><a href="#Redes">CHOMPAS</a></li>
+                <li><a href="#Redes">CONJUNTOS</a></li>
+                <li><a href="#Redes">FALDAS</a></li>
+                <li><a href="#Redes">GORRAS</a></li>
+                <li><a href="#Redes">HOGAR</a></li>
+                <li><a href="#Redes">ITEMS TEMPORALES</a></li>
+                <li><a href="#Redes">LENCERIA</a></li>
+                <li><a href="#Redes">MOCHILAS</a></li>
+                <li><a href="#Redes">OVEROLES-MANDILES</a></li>
+                <li><a href="#Redes">PANTALONES</a></li>
+                <li><a href="#Redes">PRENDAS HOSPITALARIAS</a></li>
+                <li><a href="#Redes">VARIOS</a></li>
+                <li><a href="#Redes">VESTIDOS</a></li>
+                <li><a href="#Redes">ZAPATOS</a></li>
             </ul>
         </nav>
     </div>
@@ -52,7 +52,7 @@
         <h1>PRODUCTOS</h1>
         <section id="Servicios" class="servicios">
             <div class="container">
-                <h2>ABRIGOS</h2>
+                <h2>Blusas</h2>
                 @foreach($getServicios as $getServicios)
                 <div class="row contenedor-tarjetas">
                     <!-- Servicio 1 -->
@@ -71,7 +71,7 @@
                         <div class="tarjeta card h-100 shadow-sm">
                             <img src="{{asset('sitioWeb/img//Servicio2.jpeg')}}" class="card-img-top" alt="Servicio 2">
                             <div class="contenido card-body">
-                                <h3 class="titulo card-title">Abrigo 2</h3>
+                                <h3 class="titulo card-title">Blusa 2</h3>
                                 <p class="descripcion card-text">Descripción breve del servicio 2. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>

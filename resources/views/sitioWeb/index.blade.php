@@ -89,49 +89,77 @@
 
         <section id="Servicios" class="servicios">
             <div class="container">
-                <h2>Nuestros Servicios</h2>
-                @foreach($getServicios as $getServicios)
+                <h2>Nuestros Productos</h2>
                 <div class="row contenedor-tarjetas">
                     <!-- Servicio 1 -->
                     <div class="col-md-4 d-flex justify-content-center">
-                        <div class="tarjeta card h-100 shadow-sm">
-                            <img src="{{asset('sitioWeb/img//Servicio1.jpeg')}}" class="card-img-top" alt="Servicio 1">
+                        <a href="{{ url('/productos') }}" class="tarjeta card h-100 shadow-sm text-decoration-none">
+                            <img src="{{ asset('sitioWeb/img//Servicio1.jpeg') }}" class="card-img-top" alt="Servicio 1">
                             <div class="contenido card-body">
-                                <h3 class="titulo card-title">{{$getServicios->titulo}}</h3>
-                                <p class="descripcion card-text">{{$getServicios->descripcion}}</p>
+                                <h3 class="titulo card-title">ABRIGOS</h3>
+                                <p class="descripcion card-text">Descripción breve del servicio 1. Integer posuere erat a ante venenatis dapibus posuere velit.</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    @endforeach
                     <!-- Servicio 2 -->
                     <div class="col-md-4 d-flex justify-content-center">
-                        <div class="tarjeta card h-100 shadow-sm">
+                        <a href="URL_DEL_SERVICIO" class="tarjeta card h-100 shadow-sm text-decoration-none">
                             <img src="{{asset('sitioWeb/img//Servicio2.jpeg')}}" class="card-img-top" alt="Servicio 2">
                             <div class="contenido card-body">
                                 <h3 class="titulo card-title">Servicio 2</h3>
-                                <p class="descripcion card-text">Descripción breve del servicio 2. Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <p class="descripcion card-text">Descripción breve del servicio 4. Integer posuere erat a ante venenatis dapibus posuere velit.</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <!-- Servicio 3 -->
                     <div class="col-md-4 d-flex justify-content-center">
-                        <div class="tarjeta card h-100 shadow-sm">
+                        <a href="URL_DEL_SERVICIO_3" class="tarjeta card h-100 shadow-sm text-decoration-none">
                             <img src="{{asset('sitioWeb/img//Servicio3.jpeg')}}" class="card-img-top" alt="Servicio 3">
                             <div class="contenido card-body">
                                 <h3 class="titulo card-title">Servicio 3</h3>
                                 <p class="descripcion card-text">Descripción breve del servicio 3. Integer posuere erat a ante venenatis dapibus posuere velit.</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <!-- Servicio 4 -->
                     <div class="col-md-4 d-flex justify-content-center">
-                        <div class="tarjeta card h-100 shadow-sm">
+                        <a href="URL_DEL_SERVICIO_4" class="tarjeta card h-100 shadow-sm text-decoration-none">
                             <img src="{{asset('sitioWeb/img//Servicio4.jpeg')}}" class="card-img-top" alt="Servicio 4">
                             <div class="contenido card-body">
                                 <h3 class="titulo card-title">Servicio 4</h3>
                                 <p class="descripcion card-text">Descripción breve del servicio 4. Integer posuere erat a ante venenatis dapibus posuere velit.</p>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    <!-- Servicio 4 -->
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <a href="URL_DEL_SERVICIO_4" class="tarjeta card h-100 shadow-sm text-decoration-none">
+                            <img src="{{asset('sitioWeb/img//Servicio4.jpeg')}}" class="card-img-top" alt="Servicio 4">
+                            <div class="contenido card-body">
+                                <h3 class="titulo card-title">Servicio 4</h3>
+                                <p class="descripcion card-text">Descripción breve del servicio 4. Integer posuere erat a ante venenatis dapibus posuere velit.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Servicio 4 -->
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <a href="URL_DEL_SERVICIO_4" class="tarjeta card h-100 shadow-sm text-decoration-none">
+                            <img src="{{asset('sitioWeb/img//Servicio4.jpeg')}}" class="card-img-top" alt="Servicio 4">
+                            <div class="contenido card-body">
+                                <h3 class="titulo card-title">Servicio 4</h3>
+                                <p class="descripcion card-text">Descripción breve del servicio 4. Integer posuere erat a ante venenatis dapibus posuere velit.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Servicio 4 -->
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <a href="URL_DEL_SERVICIO_4" class="tarjeta card h-100 shadow-sm text-decoration-none">
+                            <img src="{{asset('sitioWeb/img//Servicio4.jpeg')}}" class="card-img-top" alt="Servicio 4">
+                            <div class="contenido card-body">
+                                <h3 class="titulo card-title">Servicio 4</h3>
+                                <p class="descripcion card-text">Descripción breve del servicio 4. Integer posuere erat a ante venenatis dapibus posuere velit.</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
