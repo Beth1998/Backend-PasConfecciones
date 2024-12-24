@@ -12,6 +12,10 @@ use App\Models\Categorias;
 
 class PaginaController extends Controller
 {
+    public function paneldecontrol(){
+        return view('layouts/admin');
+    }
+
     public function inicio(){
         $getInformaciones = Informaciones::all();
         $getMisvis = Misvis::all();
