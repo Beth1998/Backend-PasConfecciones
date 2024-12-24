@@ -12,10 +12,6 @@ use App\Models\Categorias;
 
 class PaginaController extends Controller
 {
-    public function paneldecontrol(){
-        return view('layouts/admin');
-    }
-
     public function inicio(){
         $getInformaciones = Informaciones::all();
         $getMisvis = Misvis::all();
@@ -32,6 +28,10 @@ class PaginaController extends Controller
             'getRedes',
             'getCategorias'
         ));
+    }
+
+    public function paneldecontrol(){
+        return view('layouts/admin');
     }
 
     public function productos(){

@@ -17,16 +17,24 @@ use App\Http\Controllers\panel\MisVisController;
 
 //RUTAS PAGINA WEB
 Route::get('/', [PaginaController::class, 'inicio']);
-Route::get('/admin', [PaginaController::class, 'paneldecontrol']);
+//Route::get('/admin', [PaginaController::class, 'paneldecontrol']);
+//en ves de admin -> panel
 Route::get('/productos', [PaginaController::class, 'productos']);
 Route::get('/blusas', [PaginaController::class, 'blusas']);
 
 
 //RUTA PANEL CONTROL
+Route::get('/admin', [PanelController::class, 'index']);
 
+//Rutas Servicios
+Route::get('/servicios', [ServicioController::class, 'index']);
+Route::get('/createService', [ServicioController::class, 'create']);
+Route::post('/storeService', [ServicioController::class, 'store']);
 
 //RUTA MISION Y VISION
-Route::get('/MisVis',[MisVisController::class,'index']);
-Route::get('editMisVis',[MisVisController::class, 'create']);
+Route::get('/MisVis',[MisVisController::class, 'index']);
+Route::get('/EditMisVis', [MisVisController::class, 'edit']);
 //Route::get('/EditMisVis',[MisVisController::class,'index']);
 
+//Rutes redes
+Route::get('/redes', [RedesController::class, 'index']);
