@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('sitioWeb/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('PanelControl/dashboard.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('PanelControl/dashboard.css') }}">
 
     <title>Panel de Control</title>
 </head>

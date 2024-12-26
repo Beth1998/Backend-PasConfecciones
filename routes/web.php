@@ -19,12 +19,12 @@ use App\Http\Controllers\panel\MisVisController;
 Route::get('/', [PaginaController::class, 'inicio']);
 //Route::get('/admin', [PaginaController::class, 'paneldecontrol']);
 //en ves de admin -> panel
-Route::get('/productos', [PaginaController::class, 'productos']);
-Route::get('/blusas', [PaginaController::class, 'blusas']);
+//Route::get('/productos', [PaginaController::class, 'productos']);
+//Route::get('/blusas', [PaginaController::class, 'blusas']);
 
 
-//RUTA PANEL CONTROL
-Route::get('/admin', [PanelController::class, 'index']);
+//RUTAS PANEL DE CONTROL
+Route::get('/admin',[PaginaController::class,'paneldecontrol']);
 
 //Rutas Servicios
 Route::get('/servicios', [ServicioController::class, 'index']);
