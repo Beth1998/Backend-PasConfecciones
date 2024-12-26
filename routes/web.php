@@ -23,18 +23,22 @@ Route::get('/', [PaginaController::class, 'inicio']);
 //Route::get('/blusas', [PaginaController::class, 'blusas']);
 
 
-//RUTAS PANEL DE CONTROL
-Route::get('/admin',[PaginaController::class,'paneldecontrol']);
+//RUTA PANEL CONTROL
+Route::get('/panel', [PaginaController::class, 'paneldecontrol']);
 
-//Rutas Servicios
-Route::get('/servicios', [ServicioController::class, 'index']);
-Route::get('/createService', [ServicioController::class, 'create']);
-Route::post('/storeService', [ServicioController::class, 'store']);
+//rvicios', [SersicioCostroller::class, 'index']);
+//Route::get('/createService', [ServicioController::class, 'index']);
+//Route::get('/createService', [ServicioController::class, 'create']);
+//Route::post('/storeService', [ServicioController::class, 'store']);
 
 //RUTA MISION Y VISION
 Route::get('/MisVis',[MisVisController::class, 'index']);
-Route::get('/EditMisVis', [MisVisController::class, 'edit']);
+Route::get('/createMisVis', [MisVisController::class, 'create']);
+Route::post('/storeMisVis', [MisVisController::class, 'store']);
+
+
+
 //Route::get('/EditMisVis',[MisVisController::class,'index']);
 
 //Rutes redes
-Route::get('/redes', [RedesController::class, 'index']);
+//Route::get('/redes', [RedesController::class, 'index']);

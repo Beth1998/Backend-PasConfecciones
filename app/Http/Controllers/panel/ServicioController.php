@@ -10,11 +10,11 @@ class ServicioController extends Controller
 {
     public function index(){
         $servicios = Service::all();
-        return view('admin.servicios.index', compact('servicios'));
+        return view('adminPC.servicios.index', compact('servicios'));
     }
 
     public function create(){
-        return view('admin.servicios.create');
+        return view('adminPC.servicios.create');
     }
 
     public function store(Request $request){
