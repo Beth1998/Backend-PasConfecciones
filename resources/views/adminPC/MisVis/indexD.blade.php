@@ -12,11 +12,10 @@
     @endif
 
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Listado de Misión y Visión</h1>
+        <h1 class="h2">Listado de Misión y Visión Desactivados</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
-                <a class="btn btn-outline-success" href="{{ route('createMisVis') }}">Ingresar</a>
-                <a class="btn btn-outline-danger" href="{{ route('MisVis.indexD') }}">Ver Desactivados</a>
+                <a class="btn btn-outline-success" href="{{ route('MisVis.index') }}">Ver Activos</a>
             </div>
         </div>
     </div>
@@ -31,17 +30,13 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($items as $item)
+                @foreach ($MisVis as $item)
                     <tr>
                         <td>{{ $item->name }}</td>
-                        <td><img src="{{ asset('imagen/'.$item->image) }}" alt="Imagen" width="100"></td>
+                        <td><img style="width:100px; height:100px;" src="{{ asset('imagen/'.$item->image) }}" alt="Imagen"></td>
                         <td>
                             <a class="btn btn-outline-success" href="{{ route('editMisVis', ['id' => $item->id]) }}">Actualizar</a>
-                            @if($item->status == 'ACTIVE')
-                                <a class="btn btn-outline-danger" href="{{ route('statusMisVis', ['id' => $item->id]) }}">Desactivar</a>
-                            @else
-                                <a class="btn btn-outline-primary" href="{{ route('statusMisVis', ['id' => $item->id]) }}">Activar</a>
-                            @endif
+                            <a class="btn btn-outline-primary" href="{{ route('statusMisVis', ['id' => $item->id]) }}">Activar</a>
                         </td>
                     </tr>
                 @endforeach
