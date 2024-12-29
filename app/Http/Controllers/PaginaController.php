@@ -12,7 +12,7 @@ use App\Models\Categorias;
 
 class PaginaController extends Controller
 {
-    public function inicio(){
+    public function index(){
         $getInformaciones = Informaciones::all();
         $getMisvis = Misvis::all();
         $getServicios = Servicios::all();
@@ -20,7 +20,7 @@ class PaginaController extends Controller
         $getImagenes = Imagenes::all();
         $getCategorias = Categorias::all();
         
-        return view('SitioWeb/index', compact(
+        return view('layouts/index', compact(
             'getInformaciones',
             'getImagenes',
             'getMisvis',

@@ -16,7 +16,7 @@ use App\Http\Controllers\panel\MisVisController;
 
 
 //RUTAS PAGINA WEB
-Route::get('/', [PaginaController::class, 'inicio']);
+Route::get('/', [PaginaController::class, 'index']);
 //Route::get('/productos', [PaginaController::class, 'productos']);
 //Route::get('/blusas', [PaginaController::class, 'blusas']);
 

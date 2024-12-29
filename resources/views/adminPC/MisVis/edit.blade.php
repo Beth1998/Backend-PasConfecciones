@@ -23,7 +23,7 @@
         <div class="col-md-12">
           <figure class="figure" style="max-width: 100%; height: auto; overflow: hidden; text-align: center;">
               <!-- Agregar object-fit para evitar recortes -->
-              <img src="{{ asset('imagen/'.$MisVis->image) }}" class="figure-img img-fluid rounded" alt="Imagen actual" style="object-fit: contain; width: 100%; max-height: 300px;">
+              <img src="{{ asset('image/'.$MisVis->image) }}" class="figure-img img-fluid rounded" alt="Imagen actual" style="object-fit: contain; width: 100%; max-height: 300px;">
           </figure>
         </div>
 

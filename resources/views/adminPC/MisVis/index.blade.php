@@ -34,7 +34,7 @@
                 @foreach ($items as $item)
                     <tr>
                         <td>{{ $item->name }}</td>
-                        <td><img src="{{ asset('imagen/'.$item->image) }}" alt="Imagen" width="100"></td>
+                        <td><img src="{{ asset('image/'.$item->image) }}" alt="Imagen" width="100"></td>
                         <td>
                             <a class="btn btn-outline-success" href="{{ route('editMisVis', ['id' => $item->id]) }}">Actualizar</a>
                             @if($item->status == 'ACTIVE')

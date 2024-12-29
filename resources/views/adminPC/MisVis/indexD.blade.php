@@ -33,7 +33,7 @@
                 @foreach ($MisVis as $item)
                     <tr>
                         <td>{{ $item->name }}</td>
-                        <td><img style="width:100px; height:100px;" src="{{ asset('imagen/'.$item->image) }}" alt="Imagen"></td>
+                        <td><img style="width:100px; height:100px;" src="{{ asset('image/'.$item->image) }}" alt="Imagen"></td>
                         <td>
                             <a class="btn btn-outline-success" href="{{ route('editMisVis', ['id' => $item->id]) }}">Actualizar</a>
                             <a class="btn btn-outline-primary" href="{{ route('statusMisVis', ['id' => $item->id]) }}">Activar</a>
