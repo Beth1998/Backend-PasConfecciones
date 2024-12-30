@@ -6,10 +6,15 @@ use Illuminate\Http\Request;
 
 class MisVisController extends Controller
 {
-    public function MisVis(){
-        $getMisVis = MisVis::all();
-        return view('sitioWeb/index.blade.php', compact('getMisVis'));
+    public function index() {
+        // Traer los datos desde la base de datos
+        $items = MisVis::where('status', 'activo')->get();
+    
+        // Retornar la vista con los datos
+        return view('layouts.index', compact('items'));
     }
+    
+    
 
     public function Edit($id){
         $editMisVis = MisVis::where('id', $id)->firstOrFail();

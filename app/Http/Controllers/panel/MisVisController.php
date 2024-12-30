@@ -25,8 +25,8 @@ class MisVisController extends Controller
     public function store(Request $request){
         // Validación de los datos
         $request->validate([
-            'name' => 'required|string|max:255',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048', // Validar la imagen
+            'name' => 'required|string|max:8000',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:8000', // Validar la imagen
         ]);
 
         // Almacenar los datos del formulario
@@ -60,19 +60,19 @@ class MisVisController extends Controller
 
         // Valida los datos
         $request->validate([
-            'name' => 'required|string|max:255',
-            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'name' => 'required|string|max:8000',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:8000',
         ]);
 
         // Si se selecciona una nueva imagen, actualízala
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $imageName = time().'.'.$image->getClientOriginalExtension();
-            $image->move(public_path('imagen'), $imageName);
+            $image->move(public_path('image'), $imageName);
 
             // Elimina la imagen anterior si existe
-            if ($MisVis->image && file_exists(public_path('imagen/'.$MisVis->image))) {
-                unlink(public_path('imagen/'.$MisVis->image));
+            if ($MisVis->image && file_exists(public_path('image/'.$MisVis->image))) {
+                unlink(public_path('image/'.$MisVis->image));
             }
 
             // Asigna la nueva imagen

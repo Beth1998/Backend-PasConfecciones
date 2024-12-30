@@ -68,18 +68,23 @@
         </section>        
 
         <section id="MisionV" class="mision-vision">
-            <div class="item">
+    @if($Mision)
+        <div class="item">
+            <img src="{{ asset('image/' . $Mision->image) }}" alt="Misión">
+            <h2 class="featurette-heading">Misión</h2>
+            <p class="lead text-justify">{{ $Mision->name }}</p>
+        </div>
+    @endif
 
-            <img src="{{asset('sitioWeb/img//Mision.jpeg')}}" alt="Misión">
-                <h2>MISION</h2>
-                <p>Fabricamos uniformes de trabajo personalizados, diseñados para adaptarse a las necesidades específicas de cada cliente, garantizando su funcionalidad y comodidad. Nos comprometemos con un comercio justo, basado en los principios de la economía solidaria, promoviendo prácticas éticas y sostenibles en todo el proceso.</p>
-            </div>
-            <div class="item">
-                <img src="{{asset('sitioWeb/img//Vision.jpeg')}}" alt="Visión">
-                <h2>VISION</h2>
-                <p>"Para 2028, seremos un referente para nuestros clientes, ofreciendo soluciones relevantes y creando relaciones duraderas. Nos comprometemos a mantener nuestros principios basados en un modelo económico social y solidario, que impulse el crecimiento mutuo."</p>
-            </div>
-        </section>
+    @if($Vision)
+        <div class="item">
+            <img src="{{ asset('image/' . $Vision->image) }}" alt="Visión">
+            <h2 class="featurette-heading">Visión</h2>
+            <p class="lead">{{ $Vision->name }}</p>
+        </div>
+    @endif
+</section>
+
 
         <section id="Servicios" class="servicios">
             <div class="container">

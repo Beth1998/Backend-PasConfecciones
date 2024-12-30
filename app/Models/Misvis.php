@@ -5,16 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Misvis extends Model
-{
-    use HasFactory;
+namespace App\Models;
 
-    protected $fillable = [
-        'name',
-        'image',
-        'status',
-    ];
-    // Si el nombre de la tabla no sigue la convención, especifícalo aquí
-    protected $table = 'misvis';
+use Illuminate\Database\Eloquent\Model;
+
+class MisVis extends Model
+{
+    protected $table = 'misvis'; // Asegúrate de que coincide con el nombre de la tabla
+    protected $fillable = ['name', 'image', 'status']; // Define las columnas relevantes
 }
 

@@ -18,8 +18,6 @@ class Misvis extends Migration
             $table->text('name'); 
             $table->text('image');
             $table->enum('status',['ACTIVE','DESACTIVATE'])->default('ACTIVE');
-            /*$table->unsignedBigInteger('imagenes_id');
-            $table->foreign('imagenes_id')->references('id')->on('imagenes');*/
             $table->timestamps();
         });
     }
