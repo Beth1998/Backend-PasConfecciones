@@ -71,16 +71,16 @@
     @if($Mision)
         <div class="item">
             <img src="{{ asset('image/' . $Mision->image) }}" alt="Misión">
-            <h2 class="featurette-heading">Misión</h2>
-            <p class="lead text-justify">{{ $Mision->name }}</p>
+            <h2>Misión</h2>
+            <p>{{ $Mision->name }}</p>
         </div>
     @endif
 
     @if($Vision)
         <div class="item">
             <img src="{{ asset('image/' . $Vision->image) }}" alt="Visión">
-            <h2 class="featurette-heading">Visión</h2>
-            <p class="lead">{{ $Vision->name }}</p>
+            <h2>Visión</h2>
+            <p>{{ $Vision->name }}</p>
         </div>
     @endif
 </section>

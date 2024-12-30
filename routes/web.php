@@ -24,12 +24,8 @@ Route::get('/', [PaginaController::class, 'index']);
 //RUTA PANEL CONTROL
 Route::get('/panel', [PaginaController::class, 'paneldecontrol']);
 
-//rvicios', [SersicioCostroller::class, 'index']);
-//Route::get('/createService', [ServicioController::class, 'index']);
-//Route::get('/createService', [ServicioController::class, 'create']);
-//Route::post('/storeService', [ServicioController::class, 'store']);
 
-//RUTA MISION Y VISION 
+//RUTAS PARA MISION Y VISION 
 
 //Ruta del inicio de Mision y Vision
 Route::get('/MisVis', [MisVisController::class, 'index'])->name('MisVis.index');
@@ -46,17 +42,11 @@ Route::get('/editMisVis/{id}', [MisVisController::class, 'edit'])->name('editMis
 // Ruta para actuyalizar un nuevo registro
 Route::put('/updateMisVis/{id}', [MisVisController::class, 'update'])->name('updateMisVis');
 
-// Ruta para cambiar el estado de la misión o visión
-//Route::get('/statusMisVis/{id}', [MisVisController::class, 'status'])->name('statusMisVis');
-
-// Ruta para la vista de elementos desactivados
-//Route::get('/MisVisDesactivados', [MisVisController::class, 'indexD'])->name('MisVis.indexD');
-
-//Route::get('/MisVis', [MisVisController::class, 'index'])->name('MisVis.index');
+//ESTADO
 Route::get('/MisVis/desactivados', [MisVisController::class, 'indexD'])->name('MisVis.indexD');
 Route::get('/MisVis/status/{id}', [MisVisController::class, 'status'])->name('statusMisVis');
 
 
 
 //Rutes redes
-//Route::get('/redes', [RedesController::class, 'index']);
+Route::get('/redes', [RedesController::class, 'index']);

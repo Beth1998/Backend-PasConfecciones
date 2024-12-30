@@ -6,12 +6,12 @@
 
 
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Listado de servicios</h1>
+        <h1 class="h2">Listado de Servicios Desactivados</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
         
                 <a class="btn btn-outline-success" href="/createService">Ingresar</a>
-                <a class="btn btn-outline-danger" href="/serviciosD">Desactivados</a>
+       
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@
                   <td><a  style="text-decoration: none; color:black;" href="{{$servicio->link}}">{{$servicio->contact}}</a></td>
                   <td>
                     <a  href="/editService/{{$servicio->id}}" class="btn btn-outline-success">Editar</a>
-                    <a  href="/statuService/{{$servicio->id}}" class="btn btn-outline-danger">Desactivar</a>
+                    <a  href="/statuService/{{$servicio->id}}" class="btn btn-outline-primary">Activar</a>
                
                   </td>
                 </tr>

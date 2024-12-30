@@ -9,8 +9,6 @@ use Illuminate\Http\Request;
 class MisVisController extends Controller
 {
     public function index(){
-        
-
         // Solo traer los elementos cuyo estado es 'ACTIVE'
     $items = MisVis::where('status', 'ACTIVE')->get();
 

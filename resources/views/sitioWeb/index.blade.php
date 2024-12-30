@@ -69,13 +69,6 @@
 
         <section id="MisionV" class="mision-vision">
             <div class="item">
-            <!--@foreach($getMisvis as $getMisvis)
-                <img src="{{asset('sitioWeb/img//Mision.jpeg')}}" alt="Misión">
-                <h2>{{$getMisvis->text}}</h2>
-                <p>{{$getMisvis->url}}</p>
-            </div>
-            @endforeach -->
-
             <img src="{{asset('sitioWeb/img//Mision.jpeg')}}" alt="Misión">
                 <h2>MISION</h2>
                 <p>Fabricamos uniformes de trabajo personalizados, diseñados para adaptarse a las necesidades específicas de cada cliente, garantizando su funcionalidad y comodidad. Nos comprometemos con un comercio justo, basado en los principios de la economía solidaria, promoviendo prácticas éticas y sostenibles en todo el proceso.</p>
